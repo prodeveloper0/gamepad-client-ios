@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iyr-di-i9S">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Computer List-->
+        <scene sceneID="mlY-da-eEd">
+            <objects>
+                <tableViewController id="4qF-Kk-bJC" customClass="ComputerListTableViewController" customModule="gamepad" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qQp-cI-BUW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="ComputerListCellIdentifier" textLabel="K5l-1I-B1V" detailTextLabel="oDJ-aT-zhg" style="IBUITableViewCellStyleSubtitle" id="HGq-wi-EWE">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HGq-wi-EWE" id="XpH-GZ-ouB">
+                                    <rect key="frame" x="0.0" y="0.0" width="347" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K5l-1I-B1V">
+                                            <rect key="frame" x="15" y="5" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oDJ-aT-zhg">
+                                            <rect key="frame" x="14.999999999999996" y="25.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="tv6-4g-m2z" kind="presentation" identifier="SelectComputerSegue" modalPresentationStyle="fullScreen" id="pc0-1N-X1P"/>
+                                    <segue destination="0Uo-S1-0Il" kind="show" identifier="EditComputerSegue" trigger="accessoryAction" id="3bd-5e-4H8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4qF-Kk-bJC" id="Xuc-gy-XMH"/>
+                            <outlet property="delegate" destination="4qF-Kk-bJC" id="f9W-uC-c2j"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Computer List" id="E5j-IX-XfO">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="zgu-aS-QU9"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3xl-GZ-61U">
+                            <connections>
+                                <segue destination="0Uo-S1-0Il" kind="show" identifier="" id="fQp-UJ-tP4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sn8-vO-xv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706" y="135"/>
+        </scene>
+        <!--Delegate-->
+        <scene sceneID="xUT-1k-rSr">
+            <objects>
+                <viewController title="GamePad" id="tv6-4g-m2z" customClass="GamePadViewController" customModule="gamepad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9iS-tG-fWG"/>
+                        <viewControllerLayoutGuide type="bottom" id="m5H-EC-aik"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="knK-dA-9Ia">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzi-Hh-eCK" customClass="JoystickCircleButton" customModule="gamepad" customModuleProvider="target">
+                                <rect key="frame" x="573" y="195" width="74" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.00047121720320000002" blue="0.095372596150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDownPad:" destination="tv6-4g-m2z" eventType="touchDown" id="xtD-As-Mip"/>
+                                    <action selector="touchUpPad:" destination="tv6-4g-m2z" eventType="touchUpInside" id="fmV-5R-C2C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ura-dU-jDy" customClass="JoystickCircleButton" customModule="gamepad" customModuleProvider="target">
+                                <rect key="frame" x="487" y="195" width="74" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Y">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.00047121720320000002" blue="0.095372596150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDownPad:" destination="tv6-4g-m2z" eventType="touchDown" id="Bcc-V3-ODP"/>
+                                    <action selector="touchUpPad:" destination="tv6-4g-m2z" eventType="touchUpInside" id="HUl-64-dVd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riN-wz-VYK" customClass="JoystickRoundButton" customModule="gamepad" customModuleProvider="target">
+                                <rect key="frame" x="20" y="131" width="160" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="SELECT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.00047121720320000002" blue="0.095372596150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDownPad:" destination="tv6-4g-m2z" eventType="touchDown" id="c6D-fZ-EsP"/>
+                                    <action selector="touchUpPad:" destination="tv6-4g-m2z" eventType="touchUpInside" id="jgJ-RC-ruh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erO-cR-Ey4" customClass="JoystickRoundButton" customModule="gamepad" customModuleProvider="target">
+                                <rect key="frame" x="487" y="131" width="160" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.00047121720320000002" blue="0.095372596150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDownPad:" destination="tv6-4g-m2z" eventType="touchDown" id="7aY-Pw-AI7"/>
+                                    <action selector="touchUpPad:" destination="tv6-4g-m2z" eventType="touchUpInside" id="gU8-Pr-8Kj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxa-NR-Ir3" customClass="JoystickRoundButton" customModule="gamepad" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="220" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="L1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.00047121720320000002" blue="0.095372596150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDownPad:" destination="tv6-4g-m2z" eventType="touchDown" id="b3k-tQ-DRW"/>
+                                    <action selector="touchUpPad:" destination="tv6-4g-m2z" eventType="touchUpInside" id="EZy-dw-aPS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZn-mG-zPS" customClass="JoystickRoundButton" customModule="gamepad" customModuleProvider="target">
+                                <rect key="frame" x="427" y="20" width="220" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="R1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.00047121720320000002" blue="0.095372596150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDownPad:" destination="tv6-4g-m2z" eventType="touchDown" id="uAN-TP-JUZ"/>
+                                    <action selector="touchUpPad:" destination="tv6-4g-m2z" eventType="touchUpInside" id="LAL-kg-0X3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9J5-d8-47g" customClass="JoystickRoundButton" customModule="gamepad" customModuleProvider="target">
+                                <rect key="frame" x="295" y="20" width="76" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="CLOSE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.00047121720320000002" blue="0.095372596150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchClose:" destination="tv6-4g-m2z" eventType="touchUpInside" id="kGr-ri-5yz"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EzB-Pn-ic1" customClass="JoystickPad" customModule="gamepad" customModuleProvider="target">
+                                <rect key="frame" x="20" y="195" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="padColor">
+                                        <color key="value" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="tv6-4g-m2z" id="ff6-WJ-O3A"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iG1-up-rBj" customClass="JoystickCircleButton" customModule="gamepad" customModuleProvider="target">
+                                <rect key="frame" x="444" y="281" width="74" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="B">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.00047121720320000002" blue="0.095372596150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDownPad:" destination="tv6-4g-m2z" eventType="touchDown" id="e0u-kJ-2dH"/>
+                                    <action selector="touchUpPad:" destination="tv6-4g-m2z" eventType="touchUpInside" id="SgQ-0B-o5k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8M-Ig-xtx" customClass="JoystickCircleButton" customModule="gamepad" customModuleProvider="target">
+                                <rect key="frame" x="530" y="281" width="74" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="A">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.00047121720320000002" blue="0.095372596150000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDownPad:" destination="tv6-4g-m2z" eventType="touchDown" id="2lf-Ve-xJM"/>
+                                    <action selector="touchUpPad:" destination="tv6-4g-m2z" eventType="touchUpInside" id="qWd-qI-zBd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="375"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WaQ-mf-YcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689.1304347826087" y="134.10326086956522"/>
+        </scene>
+        <!--Computer Information-->
+        <scene sceneID="4Eb-Ha-vqI">
+            <objects>
+                <viewController title="Computer Information" id="0Uo-S1-0Il" customClass="ComputerInformationViewController" customModule="gamepad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5f9-x1-UZc"/>
+                        <viewControllerLayoutGuide type="bottom" id="c6Z-xV-FTg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="crY-2j-cz6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wl-Xi-3Nf">
+                                <rect key="frame" x="20" y="93" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="JES-2Q-hzY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alias of computer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jCk-3X-Jod">
+                                <rect key="frame" x="98" y="88" width="296" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQZ-4L-bdb">
+                                <rect key="frame" x="20" y="131" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address of computer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBe-DV-W8C">
+                                <rect key="frame" x="98" y="126" width="296" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Port" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEe-OJ-yhB">
+                                <rect key="frame" x="20" y="169" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3300" borderStyle="roundedRect" placeholder="Port number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p2v-dE-sT5">
+                                <rect key="frame" x="98" y="164" width="296" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p2v-dE-sT5" firstAttribute="leading" secondItem="DEe-OJ-yhB" secondAttribute="trailing" constant="8" symbolic="YES" id="IWR-po-n21"/>
+                            <constraint firstItem="HBe-DV-W8C" firstAttribute="trailing" secondItem="p2v-dE-sT5" secondAttribute="trailing" id="KAo-R3-Wek"/>
+                            <constraint firstItem="LQZ-4L-bdb" firstAttribute="leading" secondItem="DEe-OJ-yhB" secondAttribute="leading" id="U5k-sf-TA6"/>
+                            <constraint firstItem="HBe-DV-W8C" firstAttribute="leading" secondItem="LQZ-4L-bdb" secondAttribute="trailing" constant="8" symbolic="YES" id="XPo-yV-E5b"/>
+                            <constraint firstItem="6wl-Xi-3Nf" firstAttribute="leading" secondItem="LQZ-4L-bdb" secondAttribute="leading" id="Y8u-8r-GHM"/>
+                            <constraint firstItem="jCk-3X-Jod" firstAttribute="leading" secondItem="HBe-DV-W8C" secondAttribute="leading" id="YPg-Up-HUi"/>
+                            <constraint firstItem="6wl-Xi-3Nf" firstAttribute="leading" secondItem="crY-2j-cz6" secondAttribute="leadingMargin" id="bsQ-oK-hdy"/>
+                            <constraint firstItem="HBe-DV-W8C" firstAttribute="top" secondItem="jCk-3X-Jod" secondAttribute="bottom" constant="8" symbolic="YES" id="kL8-g2-aRM"/>
+                            <constraint firstItem="jCk-3X-Jod" firstAttribute="trailing" secondItem="HBe-DV-W8C" secondAttribute="trailing" id="m4A-DE-gUX"/>
+                            <constraint firstItem="jCk-3X-Jod" firstAttribute="leading" secondItem="6wl-Xi-3Nf" secondAttribute="trailing" constant="36" id="mts-ug-V6X"/>
+                            <constraint firstItem="jCk-3X-Jod" firstAttribute="trailing" secondItem="crY-2j-cz6" secondAttribute="trailingMargin" id="pAD-TH-L8S"/>
+                            <constraint firstItem="jCk-3X-Jod" firstAttribute="top" secondItem="5f9-x1-UZc" secondAttribute="bottom" constant="24" id="pgD-HU-LJT"/>
+                            <constraint firstItem="6wl-Xi-3Nf" firstAttribute="centerY" secondItem="jCk-3X-Jod" secondAttribute="centerY" id="qmS-Db-EfL"/>
+                            <constraint firstItem="DEe-OJ-yhB" firstAttribute="centerY" secondItem="p2v-dE-sT5" secondAttribute="centerY" id="vm9-XQ-kbw"/>
+                            <constraint firstItem="LQZ-4L-bdb" firstAttribute="centerY" secondItem="HBe-DV-W8C" secondAttribute="centerY" id="xwg-dA-RmI"/>
+                            <constraint firstItem="HBe-DV-W8C" firstAttribute="leading" secondItem="p2v-dE-sT5" secondAttribute="leading" id="ykU-RL-AnC"/>
+                            <constraint firstItem="p2v-dE-sT5" firstAttribute="top" secondItem="HBe-DV-W8C" secondAttribute="bottom" constant="8" symbolic="YES" id="znS-fZ-ODp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Computer Information" id="sEX-ev-Hfl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dH5-wB-kct">
+                            <connections>
+                                <action selector="pressDone:" destination="0Uo-S1-0Il" id="kC6-8v-yc1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="txtAddress" destination="HBe-DV-W8C" id="dd8-P9-T6d"/>
+                        <outlet property="txtAlias" destination="jCk-3X-Jod" id="xm7-Je-3F3"/>
+                        <outlet property="txtPort" destination="p2v-dE-sT5" id="cup-4S-7W6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ua7-Fg-aXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704.79999999999995" y="902.69865067466276"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bmp-Nd-pFV">
+            <objects>
+                <navigationController id="iyr-di-i9S" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b2i-t6-59j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4qF-Kk-bJC" kind="relationship" relationship="rootViewController" id="GzD-dR-Guz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJU-yi-9oB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-246" y="135"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fQp-UJ-tP4"/>
+    </inferredMetricsTieBreakers>
+</document>

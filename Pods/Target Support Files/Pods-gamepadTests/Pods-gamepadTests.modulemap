@@ -1,0 +1,6 @@
+framework module Pods_gamepadTests {
+  umbrella header "Pods-gamepadTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

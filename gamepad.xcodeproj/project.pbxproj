@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DCB3B8680B288AF56B137F4 /* Pods_gamepad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D33921B03331442292C95E0 /* Pods_gamepad.framework */; };
+		636E041C877FECC2DB5C9B21 /* Pods_gamepadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78D6D91397C6A7A456D4D0F /* Pods_gamepadUITests.framework */; };
+		D53DF5A01EA77AA60003F94C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53DF59F1EA77AA60003F94C /* AppDelegate.swift */; };
+		D53DF5A51EA77AA60003F94C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53DF5A31EA77AA60003F94C /* Main.storyboard */; };
+		D53DF5A71EA77AA60003F94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53DF5A61EA77AA60003F94C /* Assets.xcassets */; };
+		D53DF5AA1EA77AA60003F94C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53DF5A81EA77AA60003F94C /* LaunchScreen.storyboard */; };
+		D53DF5B51EA77AA60003F94C /* gamepadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53DF5B41EA77AA60003F94C /* gamepadTests.swift */; };
+		D53DF5C01EA77AA60003F94C /* gamepadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53DF5BF1EA77AA60003F94C /* gamepadUITests.swift */; };
+		D576658B1EA77BDD00CF54D2 /* ComputerInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57665831EA77BDD00CF54D2 /* ComputerInformationViewController.swift */; };
+		D576658C1EA77BDD00CF54D2 /* ComputerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57665841EA77BDD00CF54D2 /* ComputerListTableViewController.swift */; };
+		D576658D1EA77BDD00CF54D2 /* ComputerStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57665851EA77BDD00CF54D2 /* ComputerStorage.swift */; };
+		D576658E1EA77BDD00CF54D2 /* GamePadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57665861EA77BDD00CF54D2 /* GamePadViewController.swift */; };
+		D576658F1EA77BDD00CF54D2 /* JoystickCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57665871EA77BDD00CF54D2 /* JoystickCircleButton.swift */; };
+		D57665901EA77BDD00CF54D2 /* JoystickPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57665881EA77BDD00CF54D2 /* JoystickPad.swift */; };
+		D57665911EA77BDD00CF54D2 /* JoystickRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57665891EA77BDD00CF54D2 /* JoystickRoundButton.swift */; };
+		D57665921EA77BDD00CF54D2 /* mymodule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D576658A1EA77BDD00CF54D2 /* mymodule.swift */; };
+		FFBACA2A488151C17AAE5C34 /* Pods_gamepadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788486203EB9F669B2F57977 /* Pods_gamepadTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D53DF5B11EA77AA60003F94C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D53DF5941EA77AA60003F94C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D53DF59B1EA77AA60003F94C;
+			remoteInfo = gamepad;
+		};
+		D53DF5BC1EA77AA60003F94C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D53DF5941EA77AA60003F94C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D53DF59B1EA77AA60003F94C;
+			remoteInfo = gamepad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089647D5CC34851B2B38FC52 /* Pods-gamepadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gamepadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gamepadTests/Pods-gamepadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		353C8F678648318D4003DAEA /* Pods-gamepad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gamepad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gamepad/Pods-gamepad.debug.xcconfig"; sourceTree = "<group>"; };
+		4A9C262CA9034FF5C8A862CE /* Pods-gamepadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gamepadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gamepadUITests/Pods-gamepadUITests.release.xcconfig"; sourceTree = "<group>"; };
+		748322186734E339F9DB85A8 /* Pods-gamepadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gamepadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gamepadTests/Pods-gamepadTests.release.xcconfig"; sourceTree = "<group>"; };
+		788486203EB9F669B2F57977 /* Pods_gamepadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gamepadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D33921B03331442292C95E0 /* Pods_gamepad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gamepad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F03C7AEEF8B9DD0F22DDE21 /* Pods-gamepad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gamepad.release.xcconfig"; path = "Pods/Target Support Files/Pods-gamepad/Pods-gamepad.release.xcconfig"; sourceTree = "<group>"; };
+		C9A378473770BF733E650E3D /* Pods-gamepadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gamepadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gamepadUITests/Pods-gamepadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D53DF59C1EA77AA60003F94C /* gamepad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gamepad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53DF59F1EA77AA60003F94C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D53DF5A41EA77AA60003F94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D53DF5A61EA77AA60003F94C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D53DF5A91EA77AA60003F94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D53DF5AB1EA77AA60003F94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D53DF5B01EA77AA60003F94C /* gamepadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gamepadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53DF5B41EA77AA60003F94C /* gamepadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamepadTests.swift; sourceTree = "<group>"; };
+		D53DF5B61EA77AA60003F94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D53DF5BB1EA77AA60003F94C /* gamepadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gamepadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53DF5BF1EA77AA60003F94C /* gamepadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamepadUITests.swift; sourceTree = "<group>"; };
+		D53DF5C11EA77AA60003F94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D57665831EA77BDD00CF54D2 /* ComputerInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerInformationViewController.swift; sourceTree = "<group>"; };
+		D57665841EA77BDD00CF54D2 /* ComputerListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerListTableViewController.swift; sourceTree = "<group>"; };
+		D57665851EA77BDD00CF54D2 /* ComputerStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputerStorage.swift; sourceTree = "<group>"; };
+		D57665861EA77BDD00CF54D2 /* GamePadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePadViewController.swift; sourceTree = "<group>"; };
+		D57665871EA77BDD00CF54D2 /* JoystickCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickCircleButton.swift; sourceTree = "<group>"; };
+		D57665881EA77BDD00CF54D2 /* JoystickPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickPad.swift; sourceTree = "<group>"; };
+		D57665891EA77BDD00CF54D2 /* JoystickRoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoystickRoundButton.swift; sourceTree = "<group>"; };
+		D576658A1EA77BDD00CF54D2 /* mymodule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mymodule.swift; sourceTree = "<group>"; };
+		D78D6D91397C6A7A456D4D0F /* Pods_gamepadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gamepadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D53DF5991EA77AA60003F94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCB3B8680B288AF56B137F4 /* Pods_gamepad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53DF5AD1EA77AA60003F94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBACA2A488151C17AAE5C34 /* Pods_gamepadTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53DF5B81EA77AA60003F94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636E041C877FECC2DB5C9B21 /* Pods_gamepadUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DFC348CACE5DFC49241D336 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D33921B03331442292C95E0 /* Pods_gamepad.framework */,
+				788486203EB9F669B2F57977 /* Pods_gamepadTests.framework */,
+				D78D6D91397C6A7A456D4D0F /* Pods_gamepadUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		959AD9E7BF12F63E90077341 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				353C8F678648318D4003DAEA /* Pods-gamepad.debug.xcconfig */,
+				9F03C7AEEF8B9DD0F22DDE21 /* Pods-gamepad.release.xcconfig */,
+				089647D5CC34851B2B38FC52 /* Pods-gamepadTests.debug.xcconfig */,
+				748322186734E339F9DB85A8 /* Pods-gamepadTests.release.xcconfig */,
+				C9A378473770BF733E650E3D /* Pods-gamepadUITests.debug.xcconfig */,
+				4A9C262CA9034FF5C8A862CE /* Pods-gamepadUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D53DF5931EA77AA60003F94C = {
+			isa = PBXGroup;
+			children = (
+				D53DF59E1EA77AA60003F94C /* gamepad */,
+				D53DF5B31EA77AA60003F94C /* gamepadTests */,
+				D53DF5BE1EA77AA60003F94C /* gamepadUITests */,
+				D53DF59D1EA77AA60003F94C /* Products */,
+				959AD9E7BF12F63E90077341 /* Pods */,
+				2DFC348CACE5DFC49241D336 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D53DF59D1EA77AA60003F94C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D53DF59C1EA77AA60003F94C /* gamepad.app */,
+				D53DF5B01EA77AA60003F94C /* gamepadTests.xctest */,
+				D53DF5BB1EA77AA60003F94C /* gamepadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D53DF59E1EA77AA60003F94C /* gamepad */ = {
+			isa = PBXGroup;
+			children = (
+				D57665961EA77D1E00CF54D2 /* CustomViews */,
+				D57665951EA77D0900CF54D2 /* ViewControllers */,
+				D57665941EA77CC000CF54D2 /* Modules */,
+				D57665931EA77C9800CF54D2 /* Resources */,
+			);
+			path = gamepad;
+			sourceTree = "<group>";
+		};
+		D53DF5B31EA77AA60003F94C /* gamepadTests */ = {
+			isa = PBXGroup;
+			children = (
+				D53DF5B41EA77AA60003F94C /* gamepadTests.swift */,
+				D53DF5B61EA77AA60003F94C /* Info.plist */,
+			);
+			path = gamepadTests;
+			sourceTree = "<group>";
+		};
+		D53DF5BE1EA77AA60003F94C /* gamepadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D53DF5BF1EA77AA60003F94C /* gamepadUITests.swift */,
+				D53DF5C11EA77AA60003F94C /* Info.plist */,
+			);
+			path = gamepadUITests;
+			sourceTree = "<group>";
+		};
+		D57665931EA77C9800CF54D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D53DF5A31EA77AA60003F94C /* Main.storyboard */,
+				D53DF5A61EA77AA60003F94C /* Assets.xcassets */,
+				D53DF5A81EA77AA60003F94C /* LaunchScreen.storyboard */,
+				D53DF5AB1EA77AA60003F94C /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D57665941EA77CC000CF54D2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D576658A1EA77BDD00CF54D2 /* mymodule.swift */,
+				D57665851EA77BDD00CF54D2 /* ComputerStorage.swift */,
+				D53DF59F1EA77AA60003F94C /* AppDelegate.swift */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		D57665951EA77D0900CF54D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D57665831EA77BDD00CF54D2 /* ComputerInformationViewController.swift */,
+				D57665841EA77BDD00CF54D2 /* ComputerListTableViewController.swift */,
+				D57665861EA77BDD00CF54D2 /* GamePadViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D57665961EA77D1E00CF54D2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				D57665871EA77BDD00CF54D2 /* JoystickCircleButton.swift */,
+				D57665881EA77BDD00CF54D2 /* JoystickPad.swift */,
+				D57665891EA77BDD00CF54D2 /* JoystickRoundButton.swift */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D53DF59B1EA77AA60003F94C /* gamepad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D53DF5C41EA77AA60003F94C /* Build configuration list for PBXNativeTarget "gamepad" */;
+			buildPhases = (
+				E3BC9ED375179A9FC70C9396 /* [CP] Check Pods Manifest.lock */,
+				D53DF5981EA77AA60003F94C /* Sources */,
+				D53DF5991EA77AA60003F94C /* Frameworks */,
+				D53DF59A1EA77AA60003F94C /* Resources */,
+				19D2B51294F3EE870CB6495A /* [CP] Embed Pods Frameworks */,
+				484D410F1A63FF1C419EE64A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gamepad;
+			productName = gamepad;
+			productReference = D53DF59C1EA77AA60003F94C /* gamepad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D53DF5AF1EA77AA60003F94C /* gamepadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D53DF5C71EA77AA60003F94C /* Build configuration list for PBXNativeTarget "gamepadTests" */;
+			buildPhases = (
+				D4B176C90435AAAFDE95ABD7 /* [CP] Check Pods Manifest.lock */,
+				D53DF5AC1EA77AA60003F94C /* Sources */,
+				D53DF5AD1EA77AA60003F94C /* Frameworks */,
+				D53DF5AE1EA77AA60003F94C /* Resources */,
+				BA44C8A7602DDA27047264FE /* [CP] Embed Pods Frameworks */,
+				653C0C7909275B81874D4CD0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D53DF5B21EA77AA60003F94C /* PBXTargetDependency */,
+			);
+			name = gamepadTests;
+			productName = gamepadTests;
+			productReference = D53DF5B01EA77AA60003F94C /* gamepadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D53DF5BA1EA77AA60003F94C /* gamepadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D53DF5CA1EA77AA60003F94C /* Build configuration list for PBXNativeTarget "gamepadUITests" */;
+			buildPhases = (
+				7712936165290655E3F1A086 /* [CP] Check Pods Manifest.lock */,
+				D53DF5B71EA77AA60003F94C /* Sources */,
+				D53DF5B81EA77AA60003F94C /* Frameworks */,
+				D53DF5B91EA77AA60003F94C /* Resources */,
+				27F32C7D76826ED649184507 /* [CP] Embed Pods Frameworks */,
+				9E3CC5FDAF7AA4B85259F19F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D53DF5BD1EA77AA60003F94C /* PBXTargetDependency */,
+			);
+			name = gamepadUITests;
+			productName = gamepadUITests;
+			productReference = D53DF5BB1EA77AA60003F94C /* gamepadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D53DF5941EA77AA60003F94C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = pr0ximo;
+				TargetAttributes = {
+					D53DF59B1EA77AA60003F94C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D53DF5AF1EA77AA60003F94C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D53DF59B1EA77AA60003F94C;
+					};
+					D53DF5BA1EA77AA60003F94C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D53DF59B1EA77AA60003F94C;
+					};
+				};
+			};
+			buildConfigurationList = D53DF5971EA77AA60003F94C /* Build configuration list for PBXProject "gamepad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D53DF5931EA77AA60003F94C;
+			productRefGroup = D53DF59D1EA77AA60003F94C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D53DF59B1EA77AA60003F94C /* gamepad */,
+				D53DF5AF1EA77AA60003F94C /* gamepadTests */,
+				D53DF5BA1EA77AA60003F94C /* gamepadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D53DF59A1EA77AA60003F94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53DF5AA1EA77AA60003F94C /* LaunchScreen.storyboard in Resources */,
+				D53DF5A71EA77AA60003F94C /* Assets.xcassets in Resources */,
+				D53DF5A51EA77AA60003F94C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53DF5AE1EA77AA60003F94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53DF5B91EA77AA60003F94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19D2B51294F3EE870CB6495A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gamepad/Pods-gamepad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27F32C7D76826ED649184507 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gamepadUITests/Pods-gamepadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		484D410F1A63FF1C419EE64A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gamepad/Pods-gamepad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		653C0C7909275B81874D4CD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gamepadTests/Pods-gamepadTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7712936165290655E3F1A086 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3CC5FDAF7AA4B85259F19F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gamepadUITests/Pods-gamepadUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA44C8A7602DDA27047264FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gamepadTests/Pods-gamepadTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B176C90435AAAFDE95ABD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3BC9ED375179A9FC70C9396 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D53DF5981EA77AA60003F94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D57665911EA77BDD00CF54D2 /* JoystickRoundButton.swift in Sources */,
+				D576658D1EA77BDD00CF54D2 /* ComputerStorage.swift in Sources */,
+				D57665901EA77BDD00CF54D2 /* JoystickPad.swift in Sources */,
+				D576658C1EA77BDD00CF54D2 /* ComputerListTableViewController.swift in Sources */,
+				D576658B1EA77BDD00CF54D2 /* ComputerInformationViewController.swift in Sources */,
+				D576658E1EA77BDD00CF54D2 /* GamePadViewController.swift in Sources */,
+				D53DF5A01EA77AA60003F94C /* AppDelegate.swift in Sources */,
+				D57665921EA77BDD00CF54D2 /* mymodule.swift in Sources */,
+				D576658F1EA77BDD00CF54D2 /* JoystickCircleButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53DF5AC1EA77AA60003F94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53DF5B51EA77AA60003F94C /* gamepadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53DF5B71EA77AA60003F94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53DF5C01EA77AA60003F94C /* gamepadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D53DF5B21EA77AA60003F94C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D53DF59B1EA77AA60003F94C /* gamepad */;
+			targetProxy = D53DF5B11EA77AA60003F94C /* PBXContainerItemProxy */;
+		};
+		D53DF5BD1EA77AA60003F94C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D53DF59B1EA77AA60003F94C /* gamepad */;
+			targetProxy = D53DF5BC1EA77AA60003F94C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D53DF5A31EA77AA60003F94C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D53DF5A41EA77AA60003F94C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D53DF5A81EA77AA60003F94C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D53DF5A91EA77AA60003F94C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D53DF5C21EA77AA60003F94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D53DF5C31EA77AA60003F94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D53DF5C51EA77AA60003F94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 353C8F678648318D4003DAEA /* Pods-gamepad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = gamepad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pr0xsw.gamepad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D53DF5C61EA77AA60003F94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F03C7AEEF8B9DD0F22DDE21 /* Pods-gamepad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = gamepad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pr0xsw.gamepad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D53DF5C81EA77AA60003F94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 089647D5CC34851B2B38FC52 /* Pods-gamepadTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = gamepadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pr0xsw.gamepadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gamepad.app/gamepad";
+			};
+			name = Debug;
+		};
+		D53DF5C91EA77AA60003F94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748322186734E339F9DB85A8 /* Pods-gamepadTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = gamepadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pr0xsw.gamepadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gamepad.app/gamepad";
+			};
+			name = Release;
+		};
+		D53DF5CB1EA77AA60003F94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A378473770BF733E650E3D /* Pods-gamepadUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = gamepadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pr0xsw.gamepadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = gamepad;
+			};
+			name = Debug;
+		};
+		D53DF5CC1EA77AA60003F94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A9C262CA9034FF5C8A862CE /* Pods-gamepadUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = gamepadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pr0xsw.gamepadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = gamepad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D53DF5971EA77AA60003F94C /* Build configuration list for PBXProject "gamepad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D53DF5C21EA77AA60003F94C /* Debug */,
+				D53DF5C31EA77AA60003F94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D53DF5C41EA77AA60003F94C /* Build configuration list for PBXNativeTarget "gamepad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D53DF5C51EA77AA60003F94C /* Debug */,
+				D53DF5C61EA77AA60003F94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D53DF5C71EA77AA60003F94C /* Build configuration list for PBXNativeTarget "gamepadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D53DF5C81EA77AA60003F94C /* Debug */,
+				D53DF5C91EA77AA60003F94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D53DF5CA1EA77AA60003F94C /* Build configuration list for PBXNativeTarget "gamepadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D53DF5CB1EA77AA60003F94C /* Debug */,
+				D53DF5CC1EA77AA60003F94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D53DF5941EA77AA60003F94C /* Project object */;
+}
